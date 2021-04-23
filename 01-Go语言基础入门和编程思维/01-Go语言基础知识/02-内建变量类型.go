@@ -7,7 +7,7 @@ import (
 )
 
 /**
- * Golang的内建变量类型:
+ * 内建变量类型:
  * 1. 布尔型: bool
  * 2. 字符型: rune  (不同于Java中的Char是一个字节大小, rune是4个字节大小, 即32位)
  * 3. 字符串型: string

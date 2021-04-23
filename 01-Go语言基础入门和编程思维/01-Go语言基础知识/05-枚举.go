@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 /**
- * Golang的枚举
+ * 枚举
  */
 
 func enums() {

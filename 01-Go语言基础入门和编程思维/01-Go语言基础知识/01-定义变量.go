@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 /**
- * Golang的变量定义
+ * 变量定义
  */
 
 func variableZeroValue() {
