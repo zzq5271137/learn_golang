@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+	"math"
+	"math/cmplx"
+)
+
 /**
  * Golang的内建变量类型:
  * 1. 布尔型: bool
@@ -14,5 +20,28 @@ package main
  *    注: complex表示复数
  */
 
+func complexNumber() {
+	c := 3 + 4i // go语言的复数的表示
+	fmt.Println(cmplx.Abs(c))
+}
+
+/**
+ * @Description: 模拟欧拉公式
+ */
+func euler() {
+	/*
+	 * 并不正好是0, 因为go语言中的复数:
+	 * 1. complex64, 它的实部和虚部都是一个float32的数
+	 * 2. complex128, 它的实部和虚部都是一个float64的数
+	 * 即, 它的实部和虚部的浮点数并不是完全准的
+	 */
+	fmt.Println(cmplx.Pow(math.E, 1i*math.Pi) + 1)
+	fmt.Println(cmplx.Exp(1i*math.Pi) + 1) // 这种写法更好, 因为 cmplx.Exp() 就是表示 e 的多少次方
+
+	fmt.Printf("%.3f\n", cmplx.Exp(1i*math.Pi)+1) // 只要小数点后三位, 这样结果是0
+}
+
 func main() {
+	complexNumber()
+	euler()
 }
