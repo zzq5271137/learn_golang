@@ -25,7 +25,7 @@ func eval(a, b int, op string) int {
 
 func grade(score int) string {
 	g := ""
-	switch {
+	switch { // switch 关键字后面也可以没有表达式, 将判断放入 case 里面
 	case score < 0 || score > 100:
 		panic(fmt.Sprintf("wrong score: %d", score))
 	case score < 60:
