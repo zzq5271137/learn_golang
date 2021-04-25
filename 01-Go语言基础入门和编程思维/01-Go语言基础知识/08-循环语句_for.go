@@ -26,6 +26,10 @@ func convertToBinary(n int) string {
 	return result
 }
 
+//func printFile(filename string) {
+//	filename, err := os.Open(filename)
+//}
+
 func main() {
 	fmt.Println(sum100())
 
