@@ -26,7 +26,7 @@ func complexNumber() {
 }
 
 /**
- * @Description: 模拟欧拉公式
+ * 模拟欧拉公式
  */
 func euler() {
 	/*
