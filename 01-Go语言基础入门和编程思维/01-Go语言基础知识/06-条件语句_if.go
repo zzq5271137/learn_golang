@@ -22,7 +22,8 @@ func bounded(v int) int {
 func main() {
 	fmt.Println(bounded(101))
 
-	const fileName = "06-条件语句_if.txt"
+	//const fileName = "06-条件语句_if.txt"  // 由于.go源文件编译后与.go源文件可能不处在同一目录下, 所以如果是这种方式，可能找不到文件
+	const fileName = "/Users/zzq/Documents/workspaces/GoLand_workspace/learn_golang/01-Go语言基础入门和编程思维/01-Go语言基础知识/06-条件语句_if.txt"
 	contents, err := ioutil.ReadFile(fileName)
 	if err != nil {
 		fmt.Println(err)
