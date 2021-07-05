@@ -7,6 +7,7 @@ import "fmt"
  */
 
 func enums() {
+	fmt.Println("enums():")
 	//const ( // go语言没有单独的枚举类型关键字, 使用 const 加括号的形式定义枚举类型
 	//	cpp    = 0
 	//	java   = 1

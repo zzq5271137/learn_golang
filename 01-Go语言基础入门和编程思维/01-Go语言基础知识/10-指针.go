@@ -12,6 +12,7 @@ import "fmt"
  */
 
 func pointerIntro() {
+	fmt.Println("pointerIntro():")
 	var a int = 2
 	fmt.Printf("Before: %d\n", a)
 	var pa *int = &a

@@ -21,6 +21,7 @@ import (
  */
 
 func complexNumber() {
+	fmt.Println("complexNumber():")
 	c := 3 + 4i // go语言的复数的表示
 	fmt.Println(cmplx.Abs(c))
 }
@@ -29,6 +30,7 @@ func complexNumber() {
  * 模拟欧拉公式
  */
 func euler() {
+	fmt.Println("euler():")
 	/*
 	 * 并不正好是0, 因为go语言中的复数:
 	 * 1. complex64, 它的实部和虚部都是一个float32的数

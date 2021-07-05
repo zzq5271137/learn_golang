@@ -42,6 +42,7 @@ func convertToBinary(n int) string {
  * 省略起始条件和递增表达式的for循环演示
  */
 func printFile(filename string) {
+	fmt.Println("printFile():")
 	file, err := os.Open(filename)
 	if err != nil {
 		panic(err)

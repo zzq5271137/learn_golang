@@ -12,6 +12,7 @@ import (
  */
 
 func triangle() {
+	fmt.Println("triangle():")
 	var a, b int = 3, 4
 	var c int
 	//c = math.Sqrt(a*a + b*b) // math.Sqrt() 函数需要参数类型的是 float64, 所以这里报错 (因为golang中的类型转换是强制的)
