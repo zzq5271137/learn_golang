@@ -11,11 +11,11 @@ import "fmt"
 func sliceIntro() {
 	fmt.Println("sliceIntro():")
 	arr := [...]int{0, 1, 2, 3, 4, 5, 6, 7}
-	fmt.Println("arr=", arr)
-	fmt.Println("arr[2:6]=", arr[2:6]) // 左开右闭
-	fmt.Println("arr[:6]=", arr[:6])
-	fmt.Println("arr[2:]=", arr[2:])
-	fmt.Println("arr[:]=", arr[:])
+	fmt.Printf("arr=%v\n", arr)
+	fmt.Printf("arr[2:6]=%v\n", arr[2:6]) // 左开右闭
+	fmt.Printf("arr[:6]=%v\n", arr[:6])
+	fmt.Printf("arr[2:]=%v\n", arr[2:])
+	fmt.Printf("arr[:]=%v\n", arr[:])
 }
 
 func updateSlice(s []int) { // 以切片为参数
@@ -40,10 +40,10 @@ func reslice() {
 	s1 := arr[:]
 	s2 := s1[:5]
 	s3 := s2[2:]
-	fmt.Println("arr=", arr)
-	fmt.Println("s1(arr[:])=", s1)
-	fmt.Println("s2(s1[:5])=", s2)
-	fmt.Println("s3(s2[2:])=", s3)
+	fmt.Printf("arr=%v\n", arr)
+	fmt.Printf("s1(arr[:])=%v\n", s1)
+	fmt.Printf("s2(s1[:5])=%v\n", s2)
+	fmt.Printf("s3(s2[2:])=%v\n", s3)
 }
 
 func sliceExtend() {
@@ -62,9 +62,9 @@ func sliceExtend() {
 	arr := [...]int{0, 1, 2, 3, 4, 5, 6, 7}
 	s1 := arr[2:6]
 	s2 := s1[3:5]
-	fmt.Println("arr=", arr)
-	fmt.Println("s1(arr[2:6])=", s1)
-	fmt.Println("s2(s1[3:5])=", s2) // slice可以向后扩展, 但不可以向前扩展
+	fmt.Printf("arr=%v\n", arr)
+	fmt.Printf("s1(arr[2:6])=%v\n", s1)
+	fmt.Printf("s2(s1[3:5])=%v\n", s2) // slice可以向后扩展, 但不可以向前扩展
 
 	fmt.Printf("s1=%v, len(s1)=%d, cap(s1)=%d\n", s1, len(s1), cap(s1))
 	fmt.Printf("s2=%v, len(s2)=%d, cap(s2)=%d\n", s2, len(s2), cap(s2))
