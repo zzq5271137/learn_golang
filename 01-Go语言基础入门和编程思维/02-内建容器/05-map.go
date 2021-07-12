@@ -71,9 +71,22 @@ func getValueFromMap() {
 	}
 }
 
+func deleteFromMap() {
+	fmt.Println("deleteFromMap():")
+	m := map[string]string{
+		"name":   "zzqgo",
+		"age":    "100",
+		"course": "golang",
+	}
+	fmt.Printf("Before delete, m=%v\n", m)
+	delete(m, "course")
+	fmt.Printf("After delete, m=%v\n", m)
+}
+
 func main() {
 	mapCreate1()
 	mapCreate2()
 	mapTraverse()
 	getValueFromMap()
+	deleteFromMap()
 }
