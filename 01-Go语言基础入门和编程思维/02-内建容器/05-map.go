@@ -90,3 +90,10 @@ func main() {
 	getValueFromMap()
 	deleteFromMap()
 }
+
+/*
+ * 关于map的key, golang中什么类型可以作为map的key:
+ * 1. map使用哈希表, key必须可以比较是否相等
+ * 2. 对于golang的内建类型, 除了slice、map、function的内建类型都可以作为map的key
+ * 3. 对于自定义类型(Struct类型), 若不包含类型为slice、map、function的字段, 则也可以作为map的key
+ */
