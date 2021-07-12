@@ -59,6 +59,8 @@ func sliceCreate2() {
 
 func sliceCreate3() {
 	fmt.Println("sliceCreate3():")
+
+	// 使用 make() 函数创建切片, make(type, len, cap)
 	s1 := make([]int, 16)
 	s2 := make([]int, 10, 32)
 	printSlice(s1)
@@ -69,6 +71,8 @@ func sliceCopy() {
 	fmt.Println("sliceCopy():")
 	s1 := []int{1, 3, 5, 7}
 	s2 := make([]int, 16)
+
+	// 使用 copy() 函数复制切片
 	copy(s2, s1)
 	printSlice(s2)
 }
