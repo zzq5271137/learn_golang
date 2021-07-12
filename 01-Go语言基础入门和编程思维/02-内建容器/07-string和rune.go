@@ -44,5 +44,10 @@ func main() {
 }
 
 /*
- * Tips: "strings"包中, 定义了很多关于字符串的操作, 优先使用这个包
+ * Tips: "strings"包中, 定义了很多关于字符串的操作, 例如:
+ * 1. strings.Fields(), strings.Split(), strings.Join()
+ * 2. strings.Contains(), strings.Index()
+ * 3. strings.ToLower(), strings.ToUpper()
+ * 4. strings.Trim(), strings.TrimLeft(), strings.TrimRight()
+ * 等等, 遇到需要处理字符串的情况, 优先使用这个包
  */
