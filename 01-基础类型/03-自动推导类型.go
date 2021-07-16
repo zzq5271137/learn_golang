@@ -19,6 +19,15 @@ func typeDeduction() {
 	fmt.Printf("(%.2f, %T) (%s, %T) (%t, %T) (%v, %T) (%v, %T)\n", a, a, b, b, c, c, d, d, e, e)
 }
 
+func valueSwap() {
+	fmt.Println("valueSwap():")
+	i, j := 10, 20
+	fmt.Printf("Before swap, i=%d, j=%d\n", i, j)
+	i, j = j, i
+	fmt.Printf("After swap, i=%d, j=%d\n", i, j)
+}
+
 func main() {
 	typeDeduction()
+	valueSwap()
 }
