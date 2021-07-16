@@ -18,7 +18,7 @@ func defineVariable1() {
 	 */
 	var num int
 	var str string
-	fmt.Printf("num=%d, str=%q\n", num, str)
+	fmt.Printf("num=%d, str=%q\n", num, str) // %q: 打印字符串, 并附带双引号
 
 	var a, b float64 = 2.1, 3.2 // 可以同时声明多个变量, 并赋初始值
 	fmt.Println(a, b)
