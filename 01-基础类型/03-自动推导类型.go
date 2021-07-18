@@ -21,6 +21,7 @@ func typeDeduction() {
 
 func valueSwap() {
 	fmt.Println("valueSwap():")
+
 	i, j := 10, 20
 	fmt.Printf("Before swap, i=%d, j=%d\n", i, j)
 	i, j = j, i

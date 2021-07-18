@@ -13,6 +13,8 @@ type Point struct {
 }
 
 func formatPrint() {
+	fmt.Println("formatPrint():")
+
 	/*
 	 * %v: 输出结构体, 例如, {10 30}
 	 * %+v: 输出结构体显示字段名, 例如, {x:10 y:30}

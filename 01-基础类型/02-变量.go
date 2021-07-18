@@ -7,7 +7,7 @@ package main
 import "fmt"
 
 func defineVariable() {
-	fmt.Println("defineVariable1():")
+	fmt.Println("defineVariable():")
 
 	/*
 	 * 变量的声明:

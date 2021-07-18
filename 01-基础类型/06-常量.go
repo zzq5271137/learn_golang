@@ -7,6 +7,8 @@ package main
 import "fmt"
 
 func defineConst() {
+	fmt.Println("defineConst():")
+
 	/*
 	 * 常量使用 const 关键字定义
 	 */
