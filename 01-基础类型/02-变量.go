@@ -6,7 +6,7 @@ package main
 
 import "fmt"
 
-func defineVariable1() {
+func defineVariable() {
 	fmt.Println("defineVariable1():")
 
 	/*
@@ -22,8 +22,18 @@ func defineVariable1() {
 
 	var a, b float64 = 2.1, 3.2 // 可以同时声明多个变量, 并赋初始值
 	fmt.Println(a, b)
+
+	var c = 2 // 如果赋了初始值, 可以省略类型声明, 编译器会自动推导出类型
+	fmt.Println(c)
+
+	var ( // 也可以这么定义多个变量
+		d bool       // 只定义不赋值 (bool的Zero Value是false)
+		e int  = 2   // 定义并赋值
+		f      = 2.7 // 自动推导类型, 省略类型声明
+	)
+	fmt.Println(d, e, f)
 }
 
 func main() {
-	defineVariable1()
+	defineVariable()
 }
