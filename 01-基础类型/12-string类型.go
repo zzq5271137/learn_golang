@@ -36,7 +36,17 @@ func stringTest2() {
 	fmt.Println(utf8.RuneCountInString(str2)) // 2
 }
 
+func stringTest3() {
+	fmt.Println("stringTest3():")
+
+	str1 := "hello"
+	str2 := "world"
+	str3 := str1 + " " + str2 // 使用 + 进行字符串拼接
+	fmt.Println(str3)
+}
+
 func main() {
 	stringTest1()
 	stringTest2()
+	stringTest3()
 }
