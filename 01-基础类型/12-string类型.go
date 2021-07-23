@@ -45,8 +45,21 @@ func stringTest3() {
 	fmt.Println(str3)
 }
 
+func stringTest4() {
+	fmt.Println("stringTest4():")
+
+	str := "hello world"
+	fmt.Println(str[0]) // 可以通过下标去取字符
+
+	for i, ch := range str {
+		fmt.Printf("(%d, %c) ", i, ch)
+	}
+	fmt.Println()
+}
+
 func main() {
 	stringTest1()
 	stringTest2()
 	stringTest3()
+	stringTest4()
 }
